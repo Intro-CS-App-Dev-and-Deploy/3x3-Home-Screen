@@ -3,7 +3,7 @@ float buttonX, buttonY, buttonWidth, buttonHeight;
 float rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight;
 float circleX, circleY, circleWidth, circleHeight;
 Boolean rectOn=false, circleOn=false;
-color white=#000000;
+color black=#000000;
 
 void setup() {
   size(500, 400); //fullScreen(), displayWidth & displayHeight, leads to ScreenChecker()
@@ -12,7 +12,7 @@ void setup() {
 }//End setup()
 
 void draw() {
-  background(white);
+  background(black);
   rect(buttonX, buttonY, buttonWidth, buttonHeight);
   textDraw();
   if (rectOn == true && circleOn == false) rect(rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight);
