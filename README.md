@@ -11,7 +11,7 @@ Do This Not That
 
 Exemplar of 3x3 Home Screen Application: Tic Tac Toe
 - See Student Exemplars Creativity / tic_tac_toe.pde
-- Note: this exemplar would only ear 50% as a final grade since colour changes are not allowed in the project without prior discussions with Mr. Mercer
+- Note: this exemplar would only earn 50% as a final grade since colour changes are not allowed in the project without prior discussions with Mr. Mercer
 
 Using WORD - an programmed interface to create a matrix
 - Introduces an important question: what is the math that creates this patter ... when one thing changes they all change?
