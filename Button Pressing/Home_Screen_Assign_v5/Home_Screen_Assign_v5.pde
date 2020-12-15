@@ -63,7 +63,7 @@ void setup() {
 void draw() {
   //fill(white);
   rect(pt1X, pt1Y, rectWidth, rectHeight);
-  //Bug: must press reset, Btn#4, each time to reset colour
+  //Note: must press reset, Btn#4, each time to reset colour
   if (turnOnYellow == true ) {
     fill(yellow);
   }
