@@ -64,17 +64,14 @@ void draw() {
   //fill(white);
   rect(pt1X, pt1Y, rectWidth, rectHeight);
   //Note: must press reset, Btn#4, each time to reset colour
-  if (turnOnYellow == true ) {
-    fill(yellow);
-  }
-  if (turnOnPink == true) {
-    fill(pink);
-  }
-  if (turnOnBrown == true) {
-    fill(brown);
-  }
+  //
+  //Booleans control the fill of Rectangle #2
+  if (turnOnYellow == true ) fill(yellow);
+  if (turnOnPink == true) fill(pink);
+  if (turnOnBrown == true) fill(brown);
   rect(pt2X, pt2Y, rectWidth, rectHeight);
   fill(white);
+  //
   rect(pt3X, pt3Y, rectWidth, rectHeight);
   //
   rect(pt5X, pt5Y, rectWidth, rectHeight);
