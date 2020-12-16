@@ -22,7 +22,7 @@ void draw() {
 void mousePressed() {
   // Booleans on and off
   println ("Before", rectOn, circleOn);
-  if (mouseX>buttonX && mouseX<buttonX+buttonWidth && mouseY>buttonY && mouseY<buttonY+buttonHeight ) {
+  if ( mouseX>buttonX && mouseX<buttonX+buttonWidth && mouseY>buttonY && mouseY<buttonY+buttonHeight ) {
     if (rectOn == true) {
       rectOn = false;
       circleOn = true;

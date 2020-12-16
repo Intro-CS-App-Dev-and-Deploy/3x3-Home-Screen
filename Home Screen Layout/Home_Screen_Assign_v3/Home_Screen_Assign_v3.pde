@@ -39,8 +39,8 @@ void setup() {
   //
   button2X = width * 3/6; //Section 2, subsection 1: denominator is 3*2, numerator is counted
   button2Y = height * 2/6 ; //Section 2, subsection 0: denominator is 3*2, numerator is counted
-  button2Width = width * 1/3 * 1/2;
-  button2Height = height * 1/3 * 1/2;
+  button2Width = width * 1/3 * 1/2; //Demoninator of 6
+  button2Height = height * 1/3 * 1/2; //Demoninator of 6
   //
   button3X = width * 11/15; //Section 3, subsection 2: denominator is 3*5, numerator is counted
   button3Y = height * 14/16; //Section 3, subsection 4: denominator is 3*5, numerator is counted

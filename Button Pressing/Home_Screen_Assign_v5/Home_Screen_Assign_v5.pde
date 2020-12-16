@@ -66,9 +66,9 @@ void draw() {
   //Note: must press reset, Btn#4, each time to reset colour
   //
   //Booleans control the fill of Rectangle #2
-  if (turnOnYellow == true ) fill(yellow);
-  if (turnOnPink == true) fill(pink);
-  if (turnOnBrown == true) fill(brown);
+  if ( turnOnYellow == true ) fill(yellow);
+  if ( turnOnPink == true ) fill(pink);
+  if ( turnOnBrown == true ) fill(brown);
   rect(pt2X, pt2Y, rectWidth, rectHeight);
   fill(white);
   //
