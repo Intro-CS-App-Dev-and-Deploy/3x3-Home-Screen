@@ -1,13 +1,13 @@
 String buttonText1= "Click Me";
 String buttonText2= "Or Me";
-PFont titleFont;
+PFont buttonFont;
 color purple = #2C08FF;
 
 void textSetup() { //To Main Program
   //String[] fontList = PFont.list(); //To list all fonts available on system
   println("Start of Console");
   //printArray(fontList); //For listing all possible fonts to choose, then createFont
-  titleFont = createFont ("Harrington", 55); //Must also Tools / Create Font / Find Font / Do Not Press "OK"
+  buttonFont = createFont ("Harrington", 55); //Must also Tools / Create Font / Find Font / Do Not Press "OK"
 }//End textSetup
 
 void textDrawPre() { //"Copy and Paste Below
@@ -15,7 +15,7 @@ void textDrawPre() { //"Copy and Paste Below
   fill(purple); //Ink, hexidecimal copied from Color Selector
   textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
-  textFont(titleFont, 20); //Change the number until it fits, largest font size
+  textFont(buttonFont, 20); //Change the number until it fits, largest font size
 }//End textDrawPre
 
 void textDraw1() { //To Main Program
