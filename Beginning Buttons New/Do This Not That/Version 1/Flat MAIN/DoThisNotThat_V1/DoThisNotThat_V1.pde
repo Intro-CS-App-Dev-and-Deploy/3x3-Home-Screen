@@ -17,7 +17,7 @@ void setup()
   println ( DO, orientation );
   //if ( orientation==p ) println(instruct); //Testing the orientation variable
   //if (orientation==ls) {println("Good to Go");} else {println(instruct);} //CONTINUE TOMORROW: Break our app if not landscape
-  println(appWidth, appHeight);
+  println( "App Width:", appWidth, "\tApp Height:", appHeight );
   //
   /*Population
   buttonX1 = ;
