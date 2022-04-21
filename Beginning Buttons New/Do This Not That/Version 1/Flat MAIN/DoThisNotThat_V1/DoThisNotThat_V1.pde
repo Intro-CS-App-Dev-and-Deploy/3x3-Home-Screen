@@ -30,7 +30,7 @@ void setup()
     println("Good to Go");
   } else { //Break our app if not landscape
     println(instruct);
-    appWidth = appWidth*0;
+    appWidth = appWidth*0; //*= is easier formula
     appHeight = appHeight*0;
   } 
   println("App Geometry is:", "\tApp Width:", appWidth, "\t\tApp Height:", appHeight);
