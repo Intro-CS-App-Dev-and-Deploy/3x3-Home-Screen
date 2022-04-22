@@ -30,7 +30,7 @@ void setup()
     println("Good to Go");
   } else { //Break our app if not landscape
     println(instruct);
-    appWidth *= 0; //easier formula than appWidth=appWidth*0
+    appWidth *= 0; //assignment opperator, works like appWidth=appWidth*00
     appHeight *= 0;
   } 
   println("App Geometry is:", "\tApp Width:", appWidth, "\t\tApp Height:", appHeight);
@@ -80,7 +80,7 @@ void draw()
   fill(purple); //Ink, hexidecimal copied from Color Selector
   textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
-  textFont(buttonFont, 20); //Change the number until it fits, largest font size
+  textFont(buttonFont, 25); //Change the number until it fits, largest font size
   //
   //Specific Text per button
   text(buttonText1, buttonX1, buttonY1, buttonWidth1, buttonHeight1);
