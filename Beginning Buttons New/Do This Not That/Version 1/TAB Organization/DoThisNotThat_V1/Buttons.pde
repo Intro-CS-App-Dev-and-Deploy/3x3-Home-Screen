@@ -1,3 +1,7 @@
+float buttonX1, buttonY1, buttonWidth1, buttonHeight1;
+float buttonX2, buttonY2, buttonWidth2, buttonHeight2;
+Boolean rectON=false, ellipseON=false;
+//
 void buttonsMousePressed() {
   rectON = false;
   ellipseON = false;

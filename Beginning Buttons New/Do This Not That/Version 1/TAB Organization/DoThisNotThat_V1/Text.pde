@@ -1,3 +1,8 @@
+String buttonText1= "Click Me";
+String buttonText2= "Or Me";
+PFont buttonFont;
+color purple = #2C08FF; //Note Night Mode Friendly, all of the blue is included
+//
 void textSetUp() {
   //Text Setup
   //String[] fontList = PFont.list(); //To list all fonts available on system

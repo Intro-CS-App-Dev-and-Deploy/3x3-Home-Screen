@@ -1,3 +1,7 @@
+float rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight;
+float ellipseX, ellipseY, ellipseXDiameter, ellipseYDiameter;
+float x, y, xDiameter, yDiameter;
+//
 void GUI_draw() {
   background(black);
   rect(buttonX1, buttonY1, buttonWidth1, buttonHeight1); //DIV: "Click Me"
