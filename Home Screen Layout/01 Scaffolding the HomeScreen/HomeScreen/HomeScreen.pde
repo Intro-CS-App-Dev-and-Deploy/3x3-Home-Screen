@@ -3,7 +3,7 @@ color black=0, resetWhite=255, red=color(255, 0, 0); //Not night mode (lots of B
 float rectWidth, rectHeight, ptDiameter;
 //Points are organized by row and actaully ... hint-hint ... value
 float ptX1, ptY1, ptX2, ptY2, ptX3, ptY3, ptX4, ptY4; //Organized pts into rows
-float ptX5, ptY5, ptX6, ptY6, ptX7, ptY7, ptX8, ptY8;
+float ptX5, ptY5, ptX6, ptY6, ptX7, ptY7, ptX8, ptY8; //Notice of the patterns of the rows
 float ptX9, ptY9, ptX10, ptY10, ptX11, ptY11, ptX12, ptY12;
 float ptX13, ptY13, ptX14, ptY14, ptX15, ptY15, ptX16, ptY16;
 //
@@ -15,7 +15,7 @@ void setup()
   //Population
   rectWidth = appWidth*1/3;
   rectHeight = appHeight*1/3;
-  ptDiameter = appWidth*1/50;
+  ptDiameter = appWidth*1/50; // 1/50 is guess and check, looks the best
   ptX1 = appWidth*0;
   ptY1 = appHeight*0;
   /*
@@ -53,7 +53,7 @@ void setup()
 }//End setup
 //
 void draw() {
-  //Rectangles must be 3 by 3
+  //Rectangles matrix must be 3 by 3
   rect(ptX1, ptY1, rectWidth, rectHeight);
   //rect(ptX2, ptY2, rectWidth, rectHeight);
   //rect(ptX3, ptY3, rectWidth, rectHeight);
@@ -64,8 +64,8 @@ void draw() {
   //rect(ptX8, ptY8, rectWidth, rectHeight);
   //rect(ptX9, ptY9, rectWidth, rectHeight);
   //
-  fill(black);
   //Starting pts for rect() must be 1-9 & filled black
+  fill(black);
   ellipse(ptX1, ptY1, ptDiameter, ptDiameter);
   //ellipse(ptX2, ptY2, ptDiameter, ptDiameter);
   //ellipse(ptX3, ptY3, ptDiameter, ptDiameter);
@@ -78,8 +78,8 @@ void draw() {
   //ellipse(ptX11, ptY11, ptDiameter, ptDiameter);
   fill(resetWhite); //Best Practice
   //
-  fill(red);
   //Points for all other ellipses must be red
+  fill(red);
   //ellipse(ptX4, ptY4, ptDiameter, ptDiameter);
   //ellipse(ptX8, ptY9, ptDiameter, ptDiameter);
   //ellipse(ptX12, ptY12, ptDiameter, ptDiameter);
@@ -88,6 +88,7 @@ void draw() {
   //ellipse(ptX15, ptY15, ptDiameter, ptDiameter);
   //ellipse(ptX16, ptY16, ptDiameter, ptDiameter);
   fill(resetWhite); //Best Practice
+  //
 }//End draw
 //
 void keyPressed() {
