@@ -1,6 +1,9 @@
 
 Progressions
 - Scaffold a basic home screen program: learn how the ratios 
+- Draw rectangles and starting points (coloured black) & other points (coloured red)
+
+
 
 
 
