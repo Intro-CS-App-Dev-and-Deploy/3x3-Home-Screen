@@ -22,15 +22,12 @@ void setup()
       ptX[i+j] = appWidth*j/3;
     }
   }
-  //ptX[1] = ptX[5] = ptX[9] = ptX[13] = appWidth*0/3;
-  //
   //Next Four FOR Loops can be grouped becuase code is similar
   for (int j=0; j<4; j++) {
     for (int i=1; i<5; i++) {
       ptY[i+j*4] = appHeight*j/3;
     }
   }
-  //ptY[1] = ptY[2] = ptY[3] = ptY[4] = appHeight*0/3;
   //
   //Verifying Array Read-in
   print("\nX-values are: ");
@@ -53,13 +50,13 @@ void draw() {
   }
   fill(red);
   //Points for all other ellipses must be red
-  //Next two FOR Loops can be GROUPED because CODE same, will need special formulae
+  ////Next two FOR loops cannot be combined due to output of different amounts
   for (int i=4; i<13; i+=4) {
     ellipse(ptX[i], ptY[i], ptDiameter, ptDiameter);
-  }
+  } //Output 3 lines of code
   for (int i=13; i<ptX.length; i++) {
     ellipse(ptX[i], ptY[i], ptDiameter, ptDiameter);
-  }
+  }//Output 4 lines of code
   fill(resetWhite); //Best Practice
   //
 }//End draw
