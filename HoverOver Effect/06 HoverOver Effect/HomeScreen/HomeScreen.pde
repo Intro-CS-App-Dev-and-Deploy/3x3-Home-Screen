@@ -1,15 +1,17 @@
 //Global Variables
-color black=0, resetWhite=255, red=color(255, 0, 0); //Not night mode (lots of Blue)
+color black=0, resetWhite=255; //Not night mode (lots of Blue)
+color red=color(255, 0, 0), yellow=color(255, 255, 0); //Night Mode example colours, no BLUE
+Boolean turnOnYellow=false;
 float rectWidth, rectHeight, ptDiameter;
 //Points are organized by row and actaully ... hint-hint ... value
 int numberOfPoints = 17;
 float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
-int numberOfButtons = 4; //will be 11: quit, reset, and 9 more buttons, 1 per section (3x3)
-float[] buttonX = new float[numberOfButtons];
-float[] buttonY = new float[numberOfButtons];
-float[] buttonWidth = new float[numberOfButtons];
-float[] buttonHeight = new float[numberOfButtons];
+int numberofButtons = 4; //will be 10, Quit, Restart, 1 per square at least
+float[] buttonX = new float[numberofButtons];
+float[] buttonY = new float[numberofButtons];
+float[] buttonWidth = new float[numberofButtons];
+float[] buttonHeight = new float[numberofButtons];
 //
 void setup()
 {
@@ -31,18 +33,18 @@ void setup()
   ptY[9] = ptY[10] = ptY[11] = ptY[12] = appHeight*2/3;
   ptY[13] = ptY[14] = ptY[15] = ptY[16] = appHeight*3/3;
   //
-  buttonX[1] = appWidth*(1.0/9.0); //Section 1: numerator is 1 (count is 1)
-  buttonY[1] = appHeight*(1.0/9.0); //Section 1: numerator is 1 (count is 1)
+  buttonX[1] = appWidth*(1.0/3.0)*(1.0/3.0); //Section 1; subsection 2, numerator is 1
+  buttonY[1] = appHeight*(1.0/3.0)*(1.0/3.0); //Section 1; subsection 2, numerator is 1
   buttonWidth[1] = appWidth*(1.0/3.0)*(1.0/3.0); //Width Denominator count = 9 ... 1/9
   buttonHeight[1] = appHeight*(1.0/3.0)*(1.0/3.0); //Height Denominator count = 9 ... 1/9
   //
-  buttonX[2] = appWidth*(3.0/6.0); //Section 2: numerator is 3
-  buttonY[2] = appHeight*(2.0/6.0); //Section 2: numerator is 2
+  buttonX[2] = appWidth*(3.0/6.0); //Section 2, subsection 2, numerator is 3
+  buttonY[2] = appHeight*(2.0/6.0); //Section 2, subsection 1, numerator is 2
   buttonWidth[2] = appWidth*(1.0/3.0)*(1.0/2.0); //Denominator of 6
   buttonHeight[2] = appHeight*(1.0/3.0)*(1.0/2.0); //Denominator of 6
   //
-  buttonX[3] = appWidth*(11.0/15.0); //Section 3: numerator is 11
-  buttonY[3] = appHeight*(13.0/15.0); //Section 3: numerator is 14
+  buttonX[3] = appWidth*(11.0/15.0); //Section 3, subsection 2, Numerator is 11
+  buttonY[3] = appHeight*(13.0/15.0); //Section 3, subsection 4, Numerator is 14
   buttonWidth[3] = appWidth*(1.0/3.0)*(1.0/5.0); //Denominator is 15
   buttonHeight[3] = appHeight*(1.0/3.0)*(1.0/5.0); //Denominator is 15
   //
@@ -66,10 +68,35 @@ void draw() {
   rect(ptX[10], ptY[10], rectWidth, rectHeight);
   rect(ptX[11], ptY[11], rectWidth, rectHeight);
   //
-  fill(black);
-  rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
-  rect(buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]);
-  rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
+  //HoverOver is Yellow
+  if (mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1]) {
+    fill(yellow);
+    rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]); //same rect() as above
+  } else {
+    fill(black);
+    rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]); //same rect() as above
+  } //Button 1
+  if (mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight[2] ) {
+    fill(yellow);
+    rect(buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]); //same rect() as above
+  } else {
+    fill(black);
+    rect(buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]); //same rect() as above
+  } //Button 2
+  if (mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3] ) {
+    fill(yellow);
+    rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
+  } else {
+    fill(black);
+    rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
+  } //Button 3
+  if ( mouseX>=ptX[3] && mouseX<=ptX[3]+rectWidth && mouseY>=ptY[3] && mouseY<=ptY[3]+rectHeight ) {
+    fill(yellow);
+    rect(ptX[3], ptY[3], rectWidth, rectHeight);
+  } else {
+    fill(black);
+    rect(ptX[3], ptY[3], rectWidth, rectHeight);
+  } //Button 4 (Reset), the whole section
   fill(resetWhite); //Best Practice
   //
   fill(black);
