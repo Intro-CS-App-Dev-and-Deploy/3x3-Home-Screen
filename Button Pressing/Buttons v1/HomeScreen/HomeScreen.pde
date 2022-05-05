@@ -59,6 +59,7 @@ void draw() {
   //Rectangles must be 3 by 3
   rect(ptX[1], ptY[1], rectWidth, rectHeight);
   //
+  //Sequential Ordering of Code example
   if ( turnOnYellow==true ) fill(yellow);
   if ( turnOnPink==true ) fill(pink); //Overwrites the yellow
   if ( turnOnBrown==true ) fill(brown); //Overwrites the yellow & pink

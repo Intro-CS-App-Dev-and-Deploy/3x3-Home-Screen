@@ -59,19 +59,20 @@ void draw() {
   //Rectangles must be 3 by 3
   rect(ptX[1], ptY[1], rectWidth, rectHeight);
   //
-  // Single Line IFs controled by order of lines
+  //Sequential Ordering of Code example, cascading IFs
+  //Single Line IFs
   //if ( turnOnYellow==true ) fill(yellow);
   //if ( turnOnPink==true ) fill(pink); //Overwrites the yellow
   //if ( turnOnBrown==true ) fill(brown); //Overwrites the yellow & pink
   //
-  //Example IF's that reverse order the Single Line IFs 
+  //Example IF-ElseIf-Else that reverses the order of Sequencial Line IFs, reverses the consequences
   if ( turnOnYellow==true ) {
     fill(yellow);
   } else if ( turnOnPink==true ) {
     fill(pink);
   } else if ( turnOnBrown==true ) {
     fill(brown);
-  } else {
+  } else {//Empty ELSE Statement
   }
   rect(ptX[2], ptY[2], rectWidth, rectHeight); //Buttons change the Colour of RECT(#2)
   fill(resetWhite);
