@@ -85,7 +85,7 @@ void draw()
   //Specific Text per button
   text(buttonText1, buttonX1, buttonY1, buttonWidth1, buttonHeight1);
   text(buttonText2, buttonX2, buttonY2, buttonWidth2, buttonHeight2);
-  fill(white);
+  fill(white); //Will change the fill() on all shapes the second time repeated in draw()
 }//End draw
 //
 void keyPressed() {
