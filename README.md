@@ -108,5 +108,17 @@ Advanced: group code into sections
 
 # To Include
 
+Paper Fold a case study for ratios
+- Easy: paper fold for buttons & two rect for text and image
+- Medium: visualize where these buttons are
+- Harder: making text or image as the button, with hover-over effect 
 
+Each box has button, text, and image
+- start / instructions to proceed
+- repeat / stop
+- theme: choose own adventure
+
+2 boxes are same image
+- one with aspect ratio and labelled with Aspect Ratio
+- one without, no aspect ratio, and the story would need to include why this happens
 ---
