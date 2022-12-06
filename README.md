@@ -1,4 +1,4 @@
-# 3x3-Home-Screen
+# 3x3-Home-Screen & Chocolate Chip Cookies
 Button Application Learning about Home Screen GUI
 
 ## Introductory Visuals
@@ -13,8 +13,8 @@ Exemplar of 3x3 Home Screen Application: Tic Tac Toe
 - See Student Exemplars Creativity / tic_tac_toe.pde
 - Note: this exemplar would only earn 50% as a final grade since colour changes are not allowed in the project without prior discussions with Mr. Mercer
 
-Using WORD - an programmed interface to create a matrix
-- Introduces an important question: what is the math that creates this patter ... when one thing changes they all change?
+Using WORD - a programmed interface to create a matrix, like a table
+- Introduces an important question: what is the math that creates this pattern ... when one thing changes they all change?
 
 ## Questions
 - How can buttons control other elements?
@@ -64,11 +64,27 @@ Do This Not That, version 1
 Do This Not That, version 2
 - Using IF-ELSE code to track Boolean states
 
-3x3 Home Screen
+3x3 Home Screen 
 - Create a matrix of rectangles 3 x 3
 - Put buttons in each rectangles
 - When the button is clicked, it results in one of the following changes
   - adds an image to a rectangle
+
+3x3 Home Screen (Case Study: Paper Fold a case study for ratios)
+- Easy: paper fold for buttons & two rect for text and image
+- Medium: visualize where these buttons are
+- Harder: making text or image as the button, with hover-over effect 
+
+Case Study as a Concept: Each box has button, text, and image
+- Start Box: start button / instructions to proceed
+  - Note: there must be an OS Level Start Button too
+- Ending Box: repeat or stop buttons
+- Theme for all boxes: choose own adventure
+
+One Image Expectation, use the same image twice in different ways: 2 boxes are same image
+- one with aspect ratio and labelled with Aspect Ratio
+- one without, no aspect ratio, and the story would need to include why this happens
+- label which one is which
 
 ## Blocks of code, Emphasized Functions
 
@@ -108,17 +124,4 @@ Advanced: group code into sections
 
 # To Include
 
-Paper Fold a case study for ratios
-- Easy: paper fold for buttons & two rect for text and image
-- Medium: visualize where these buttons are
-- Harder: making text or image as the button, with hover-over effect 
-
-Each box has button, text, and image
-- start / instructions to proceed
-- repeat / stop
-- theme: choose own adventure
-
-2 boxes are same image
-- one with aspect ratio and labelled with Aspect Ratio
-- one without, no aspect ratio, and the story would need to include why this happens
 ---
