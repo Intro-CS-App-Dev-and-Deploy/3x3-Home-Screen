@@ -126,7 +126,7 @@ Advanced: group code into sections
 
 Progressions of practice
 - Case Study, including rectangle and narrative (this will be handed in, must have all planning on it, including research and reference to all text and images)
-- New Repo and Processing.pde
+- New Repo and Processing.pde Boilerplate
 - OS Level Start Button by locating example: 
 - Splash Screen and "Start Again" Button by locating example: 
 - Setup background image with tint()
