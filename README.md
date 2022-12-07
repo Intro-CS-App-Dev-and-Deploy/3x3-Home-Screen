@@ -124,4 +124,14 @@ Advanced: group code into sections
 
 # To Include
 
+Progressions of practice
+- Case Study, including rectangle and narrative
+- New Repo and Processing.pde
+- OS Level Start Button by locating example: 
+- Splash Screen and "Start Again" Button by locating example: 
+- Quit BUtton by locating example, including text and image (i.e. Chocolate Chip Cookies):
+- Display Orientation by copying Hello World example: 
+- Draw Rectangles and introduce FOR through Population
+- Draw Interior Rectangles
+
 ---
