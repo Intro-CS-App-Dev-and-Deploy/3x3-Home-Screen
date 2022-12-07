@@ -134,5 +134,6 @@ Progressions of practice
 - Display Orientation by copying Hello World example: 
 - Draw Rectangles and introduce FOR through Population
 - Draw Interior Rectangles
+- Review Do This Not That (two buttons and one button)
 
 ---
