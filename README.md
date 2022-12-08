@@ -124,6 +124,8 @@ Advanced: group code into sections
 
 # To Include
 
+Mr. Mercer's Solutions: https://github.com/Intro-CS-App-Dev-and-Deploy/Chocolate-Chip-Cookies
+
 Progressions of practice
 - Case Study, including rectangle and narrative (this will be handed in, must have all planning on it, including research and reference to all text and images)
 - New Repo and Processing.pde Boilerplate
