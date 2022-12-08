@@ -128,14 +128,24 @@ Mr. Mercer's Solutions: https://github.com/Intro-CS-App-Dev-and-Deploy/Chocolate
 
 Progressions of practice
 - Case Study, including rectangle and narrative (this will be handed in, must have all planning on it, including research and reference to all text and images)
+  - 9 evenly spaced rectangles
+  - each rectangle has text, 2-D shapes, button, image (one must be aspect ratio)
+  - narrative revealing on rectangle at a time
+  - night mode
+
 - New Repo and Processing.pde Boilerplate
+
 - Display Orientation by copying Hello World example: https://github.com/Intro-CS-App-Dev-and-Deploy/Hello-World
+  - see program for inputs and outputs
+  
 - OS Level Start Button by locating example: 
 - Splash Screen and "Start Again" Button by locating example: 
-- Setup background image with tint()
+- Setup background image with tint(), no aspect ratio
 - Quit BUtton by locating example, including text and image (i.e. Chocolate Chip Cookies):
+  - Images: one must be aspect ratio
 - Draw Rectangles and introduce FOR through Population
 - Draw Interior Rectangles
 - Review Do This Not That (two buttons and one button)
+- Night Mode populating all colours with ternary operator
 
 ---
