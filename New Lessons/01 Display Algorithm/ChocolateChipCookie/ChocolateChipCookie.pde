@@ -1,14 +1,14 @@
 //Global Variables
-int appWidth, appHeight, largerDimension, smallerDimension;
+int appWidth, appHeight, smallerDimension, largerDimension;
 //
 void setup() {
   size(600, 400);
-  //fullScreen(); //displayWidth, displayHeight
+  //fullScreen(); //displayWidth //displayHeight
   appWidth = width;
   appHeight = height;
-  //Display Algorithm from Hello World
-  display(); //Purpose: CANVAS fits in monitor & dimension size is known
-  //smaller & larger dimension from Display Algorithm
+  //Assignment: Display Alogrithm from Hello World
+  //display(); 
+  //Display Algorithm will populate smaller and larger dimensions
   println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
 }//End setup
 //
