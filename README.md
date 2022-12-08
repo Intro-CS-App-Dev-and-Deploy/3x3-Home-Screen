@@ -127,11 +127,11 @@ Advanced: group code into sections
 Progressions of practice
 - Case Study, including rectangle and narrative (this will be handed in, must have all planning on it, including research and reference to all text and images)
 - New Repo and Processing.pde Boilerplate
+- Display Orientation by copying Hello World example: https://github.com/Intro-CS-App-Dev-and-Deploy/Hello-World
 - OS Level Start Button by locating example: 
 - Splash Screen and "Start Again" Button by locating example: 
 - Setup background image with tint()
 - Quit BUtton by locating example, including text and image (i.e. Chocolate Chip Cookies):
-- Display Orientation by copying Hello World example: 
 - Draw Rectangles and introduce FOR through Population
 - Draw Interior Rectangles
 - Review Do This Not That (two buttons and one button)
