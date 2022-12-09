@@ -23,7 +23,7 @@ void keyPressed() {
 }//End keyPressed
 //
 void mousePressed() {
-  //OS Level MouseClick
+  //OS Level Mouse Click
   if ( OS_On==false ) OS_On=true;//End OS Level MouseClick 
 }//End mousePressed
 //

@@ -1,6 +1,11 @@
 //Global Variables
 int appWidth, appHeight, largerDimension, smallerDimension;
 Boolean OS_On=false;
+/* Night Mode Comment, Not for Night Mode, full BLUE
+ Purple 
+ resetDefaultInk
+ */
+color resetDefaultInk=#FFFFFF, purple=#FF00FF;
 //
 void setup() {
   size(600, 400);
@@ -26,7 +31,7 @@ void keyPressed() {
 //
 void mousePressed() {
   //OS Level MouseClick
-  if ( OS_On==false ) OS_On=true;//End OS Level MouseClick 
+  if ( OS_On==false ) OS_On=true;//End OS Level MouseClick
 }//End mousePressed
 //
 //End MAIN Program
