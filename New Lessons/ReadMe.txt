@@ -10,3 +10,5 @@ Solve the issue of Display Algorithm
 - exit() if not
 - decide the larger and smaller dimensions
 
+After the program is executed, MOUSE Click
+How do you start the program, what do you do?
