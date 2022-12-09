@@ -138,8 +138,9 @@ Progressions of practice
 - Display Orientation by copying Hello World example: https://github.com/Intro-CS-App-Dev-and-Deploy/Hello-World
   - see program for inputs and outputs
   
-- OS Level Start Button by locating example: 
-- Splash Screen and "Start Again" Button by locating example: 
+- OS Level Start Button by locating example: https://github.com/Intro-CS-App-Dev-and-Deploy/Rect-Application-Start-Quit-Button
+- Splash Screen and "Start Again" Button by locating example: https://github.com/Intro-CS-App-Dev-and-Deploy/Rect-Application-Start-Quit-Button
+
 - Setup background image with tint(), no aspect ratio
 - Quit BUtton by locating example, including text and image (i.e. Chocolate Chip Cookies):
   - Images: one must be aspect ratio
