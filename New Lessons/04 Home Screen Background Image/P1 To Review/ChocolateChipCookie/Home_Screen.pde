@@ -10,7 +10,7 @@ void homeScreen() { //Exists in VOID DRAW
    - 9 evenly spaced rectangles, Assignment #3
    - Quit Button and Reset Button (Splash Screen Start Button)
    - In each: image, text, 2D Shape, Button
-   - Narartive through the 9 rectangels
+   - Narrative through the 9 rectangles
    - See Case Study
    - Note: must have one image with aspect ratio
    */
@@ -21,16 +21,15 @@ void backgroundWhiteScreen() {
   fill(white);
   noStroke();
   rect( backgroundX, backgroundY, backgroundWidth, backgroundHeight ); //white colour
-  stroke(1); //Reset: 1 pixel
+  strokeWeight(1); //Reset: 1 pixel
   fill(white); //Reset: white
 }//End backgroundWhiteScreen
 //
 void backgroundImage() {
   backgroundWhiteScreen();
-  tint(tintDayMode, tintDayModeOpacity);
-  //tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
+  tint(tintDayMode, tintDayModeOpacity); //Day Mode, see ternary operator
+  //tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity); //Night Mode, see ternary operator
   image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
-  //image with tint()
 }//End backgroundImage
 //
 //End Home Screen Subprogram
