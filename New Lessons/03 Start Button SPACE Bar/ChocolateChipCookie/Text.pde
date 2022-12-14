@@ -19,7 +19,7 @@ void spaceBarText() {
   textFont(harrington, size); 
   String spaceBar = "Press the SPACE BAR to continue";
   text( spaceBar, startX, startY, startWidth, startHeight );
-  fill(resetDefaultInk);
+  noFill();
 }//End spaceBarText
 //
 //End Text Subprogram
