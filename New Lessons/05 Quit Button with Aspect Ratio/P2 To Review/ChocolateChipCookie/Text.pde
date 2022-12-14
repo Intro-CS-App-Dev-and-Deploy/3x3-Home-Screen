@@ -1,13 +1,12 @@
-String spaceBar = "Press the Space Bar to Continue";
 String quit = "Quit";
-PFont font;
+PFont harrington;
 void textSetup() {
   //Minimum Expectation is SINGLE FONT
   //
   //Fonts from OS (Operating System)
   // String[] fontList = PFont.list(); //To list all fonts available on OS
   //printArray(fontList); //For listing all possible fonts to choose from, then createFont
-  font = createFont("Harrington", 55); //Verify the font exists in Processing.Java
+  harrington = createFont("Harrington", 55); //Verify the font exists in Processing.Java
   // Tools / Create Font / Find Font / Do not press "OK", known bug
 }//End textSetup
 //
@@ -17,9 +16,10 @@ void spaceBarText() {
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
   int size = 20; //Change the number until it fits
-  textFont(font, size); 
+  textFont(harrington, size); 
+  String spaceBar = "Press the Space Bar to Continue";
   text( spaceBar, startX, startY, startWidth, startHeight );
-  noFill();
+  noFill(); //Reset
 }//End spaceBarText
 //
 void quitButtonText() {
@@ -28,9 +28,10 @@ void quitButtonText() {
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
   int size = 33; //Change the number until it fits
-  textFont(font, size); 
-  text( quit, quitX, quitY, quitWidth, quitHeight );
-  noFill();
+  textFont(harrington, size); 
+  String quitButton = "Quit";
+  text( quitButton, quitX, quitY, quitWidth, quitHeight );
+  noFill(); //Reset
 }//End spaceBarText
 //
 //End Text Subprogram
