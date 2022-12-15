@@ -7,6 +7,8 @@ void imagePopulation() {
 //
 void quitButtonImage() {
   quitButtonImage = backgroundImage;
+  int quitButtonImageWidth=1707, quitButtonImageHeight=2560;
+  rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
   //Rectangle's largest dimension
   //Image's matching dimension matching to rectangle's largest dimension
   //Image's other dimension, scaled
