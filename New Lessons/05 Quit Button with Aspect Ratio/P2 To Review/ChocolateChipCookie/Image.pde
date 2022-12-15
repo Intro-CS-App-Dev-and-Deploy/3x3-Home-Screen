@@ -1,13 +1,15 @@
-PImage backgroundImage;
+PImage backgroundImage, quitButtonImage;
 //
-void imageSetup() {//Image Population
+void imagePopulation() {
   backgroundImage=loadImage("../Images/thick-chocolate-chip-cookies-recipe-14-scaled.jpg");
+  //quitButtonImage is loaded here if different
 }//End imageSetup
 //
 void quitButtonImage() {
-  //Rectangle's smallest dimension
-  //Image's scaled dimension matching rectangles smallest dimension
-  //Image's other dimension, scalled
+  quitButtonImage = backgroundImage;
+  //Rectangle's largest dimension
+  //Image's matching dimension matching to rectangle's largest dimension
+  //Image's other dimension, scaled
 }//End quitButtonImage
 //
 //End Image Subprogram
