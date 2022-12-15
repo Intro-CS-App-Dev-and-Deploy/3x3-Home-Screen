@@ -22,7 +22,7 @@ void quitButtonImage() {
     smallerDimension = quitButtonImageHeight;
     //
     //Image's matching dimension to rectangle's matching dimension
-    quitButtonImageWidth_Adjusted = quitButtonImageRectWidth;
+    quitButtonImageWidth_Adjusted = quitButtonImageRectWidth; //Uses builtin compression algorithm
     imageHeightRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
     quitButtonImageHeight_Calculated = imageHeightRatio * quitButtonImageRectWidth;
     //
@@ -36,7 +36,7 @@ void quitButtonImage() {
     smallerDimension = quitButtonImageWidth;
     //
     //Image's matching dimension to rectangle's matching dimension
-    quitButtonImageHeight_Adjusted = quitButtonImageRectHeight;
+    quitButtonImageHeight_Adjusted = quitButtonImageRectHeight; //Uses builtin compression algorithm
     imageWidthRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
     quitButtonImageWidth_Calculated = imageWidthRatio * quitButtonImageRectHeight;
     //
@@ -47,8 +47,10 @@ void quitButtonImage() {
     //
   }
   //
-  //Last Line
-  //image();
+  /*Last Line, will be no Aspect Ratio b/c regular rectangle variables
+   image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight);
+   */
+  //
 }//End quitButtonImage
 //
 //End Image Subprogram
