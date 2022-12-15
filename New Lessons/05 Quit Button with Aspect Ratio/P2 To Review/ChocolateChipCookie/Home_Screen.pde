@@ -20,9 +20,12 @@ void homeScreen() { //Exists in VOID DRAW
   //
   //Quit Button, move to Button Subprogram
   if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) {
+    quitButtonImage(); //With Aspect Ratio
+    /*
     fill(white); //Testing Only
     rect( quitX, quitY, quitWidth, quitHeight ); //Testing Only
     noFill(); //Testing Only
+    */
   } else { 
     quitButtonText();
   }
