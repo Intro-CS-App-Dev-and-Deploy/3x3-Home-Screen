@@ -66,4 +66,29 @@ void quitButtonImage() {
   //
 }//End quitButtonImage
 //
+void quitButtonHoverOver() {
+  if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) {
+    fill(white);
+    noStroke();
+    rect( quitX, quitY, quitWidth, quitHeight );
+    strokeWeight(1); //Reset: 1 pixel
+    noFill();
+    imageTintNightMode();
+    quitButtonImage(); //With Aspect Ratio
+    /*
+    fill(white); //Testing Only
+    rect( quitX, quitY, quitWidth, quitHeight ); //Testing Only
+    noFill(); //Testing Only
+    */
+  } else { 
+    fill(white);
+    noStroke();
+    rect( quitX, quitY, quitWidth, quitHeight );
+    strokeWeight(1); //Reset: 1 pixel
+    noFill();
+    quitButtonText();
+  }
+}//End quitButtonHoverOver
+//
+//
 //End Image Subprogram

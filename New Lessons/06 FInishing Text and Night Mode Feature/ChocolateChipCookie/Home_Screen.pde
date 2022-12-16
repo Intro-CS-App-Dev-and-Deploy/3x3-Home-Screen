@@ -15,33 +15,11 @@ int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85;
  - Note: must have one image with aspect ratio
  */
 void homeScreen() { //Exists in VOID DRAW
-  println("Arrived at Home Screen"); //Testing for Splash Screen Start Button working
-
+  //println("Arrived at Home Screen"); //Testing for Splash Screen Start Button working
   //
   //Quit Button, move to Button Subprogram
   //rect( quitX, quitY, quitWidth, quitHeight );
-  if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) {
-    fill(white);
-    noStroke();
-    rect( quitX, quitY, quitWidth, quitHeight );
-    strokeWeight(1); //Reset: 1 pixel
-    noFill();
-    imageTintNightMode();
-    quitButtonImage(); //With Aspect Ratio
-    /*
-    fill(white); //Testing Only
-    rect( quitX, quitY, quitWidth, quitHeight ); //Testing Only
-    noFill(); //Testing Only
-    */
-  } else { 
-    fill(white);
-    noStroke();
-    rect( quitX, quitY, quitWidth, quitHeight );
-    strokeWeight(1); //Reset: 1 pixel
-    noFill();
-    quitButtonText();
-  }
-  //rect( quitX, quitY, quitWidth, quitHeight );
+  quitButtonHoverOver();
   //
 }//End homeScreen
 //
