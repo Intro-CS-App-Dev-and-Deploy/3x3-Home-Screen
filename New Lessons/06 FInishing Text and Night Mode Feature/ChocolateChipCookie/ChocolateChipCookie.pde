@@ -58,6 +58,8 @@ void keyPressed() {
 void mousePressed() {
   //OS Level MouseClick
   if ( OS_On==false ) OS_On=true;//End OS Level MouseClick
+  //Quit Button
+  if ( splashScreenStart==true && mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) exit();
 }//End mousePressed
 //
 //End MAIN Program
